@@ -1,0 +1,49 @@
+{
+  "titre": "SLM - Solutions Logicielles Modernes",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Introduction à Vue.js pour les débutants",
+      "author": "Sophie Martin",
+      "date_published": "2024-10-15",
+      "summary": "Découvrez les bases de Vue.js, un framework JavaScript progressif pour la création d'interfaces utilisateur interactives.",
+      "content": "Vue.js est un framework JavaScript léger et flexible qui permet de créer des applications dynamiques et réactives. Ce guide vous introduira aux concepts de base de Vue, y compris les composants, les directives et les props.",
+      "category": "Développement Web",
+      "tags": ["JavaScript", "Vue.js", "Frontend", "Débutants"],
+      "image_url": "https://example.com/images/vuejs-introduction.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Les meilleures pratiques en SEO pour 2024",
+      "author": "Thomas Dupont",
+      "date_published": "2024-10-10",
+      "summary": "Un guide complet pour améliorer le référencement de votre site en utilisant les techniques les plus récentes en SEO.",
+      "content": "Le SEO est essentiel pour augmenter la visibilité de votre site web. En 2024, les meilleures pratiques incluent l'optimisation pour la recherche vocale, l'importance de l'expérience utilisateur et l'utilisation de contenus structurés.",
+      "category": "Marketing Digital",
+      "tags": ["SEO", "Marketing", "Référencement", "Tendances 2024"],
+      "image_url": "https://example.com/images/seo-tips-2024.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Comment améliorer les performances de votre site web",
+      "author": "Claire Dubois",
+      "date_published": "2024-09-20",
+      "summary": "Découvrez des astuces pratiques pour rendre votre site web plus rapide et performant, et améliorer l'expérience utilisateur.",
+      "content": "Les performances d'un site web sont cruciales pour retenir les visiteurs. Des techniques telles que la réduction des requêtes HTTP, l'utilisation de la mise en cache et l'optimisation des images peuvent grandement améliorer la vitesse de votre site.",
+      "category": "Développement Web",
+      "tags": ["Performance", "Web", "Optimisation", "Expérience Utilisateur"],
+      "image_url": "https://example.com/images/web-performance.jpg"
+    },
+    {
+      "id": 4,
+      "title": "L'importance du design responsive en 2024",
+      "author": "Marc Lopez",
+      "date_published": "2024-08-25",
+      "summary": "Pourquoi le design responsive est plus important que jamais pour les sites web modernes, et comment l'implémenter efficacement.",
+      "content": "Avec la diversité des appareils utilisés pour naviguer sur le web, un design responsive est essentiel pour offrir une bonne expérience utilisateur. Ce guide explore les meilleures pratiques pour rendre votre site adaptable à toutes les résolutions d'écran.",
+      "category": "Design",
+      "tags": ["Design", "Responsive", "UX", "Mobile"],
+      "image_url": "https://example.com/images/responsive-design.jpg"
+    }
+  ]
+}
