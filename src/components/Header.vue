@@ -1,13 +1,13 @@
 <!-- Header.vue -->
 <template>
   <header>
-    <h3>{{ id }}. {{ title }}</h3>
+    <h3>{{ title.toUpperCase() }}</h3>
     <p>
       Auteur : <i>{{ author }}</i>
     </p>
-    <p>
+    <a href="#">
       Date de publication : <i>{{ datePublished }}</i>
-    </p>
+    </a>
   </header>
 </template>
 

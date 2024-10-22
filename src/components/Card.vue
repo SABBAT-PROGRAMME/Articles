@@ -2,25 +2,23 @@
 <template>
   <article>
     <header>
-      <h3>{{ article.title.toUpperCase() }}</h3>
-      <a href="#"
-        >Date de publication : <i>{{ article.date_published }}</i></a
-      >
-      <br />
-      Auteur : <b>{{ article.author }}</b>
+      <Header
+        :article="article"
+        :id="article.id"
+        :title="article.title"
+        :author="article.author"
+        :datePublished="article.date_published"
+      />
     </header>
     <main>
-      <h5>{{ article.summary }}</h5>
-      <p>{{ article.content }}</p>
+      <Body :summary="article.summary" :content="article.content" />
     </main>
     <footer>
-      <a href="#"><u>category</u></a>
-      <ul>
-        <li>{{ article.category }}</li>
-      </ul>
-      <b>{{ article.tags }}</b
-      ><br /><br />
-      <a :href="article.image_url" target="_blank">Voir plus...</a>
+      <Footer
+        :category="article.category"
+        :tags="article.tags"
+        :imageUrl="article.imageUrl"
+      />
     </footer>
   </article>
 
@@ -30,6 +28,9 @@
 <!-- script -->
 <script setup>
 import { defineProps, ref } from "vue";
+import Header from "./Header.vue";
+import Body from "./Body.vue";
+import Footer from "./Footer.vue";
 
 const props = defineProps({
   article: Object,

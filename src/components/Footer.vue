@@ -1,13 +1,14 @@
 <!-- Footer.vue -->
 <template>
   <footer>
-    <u>category</u>
+    <a href="#"> <u>category</u></a>
     <ul>
       <li>{{ category }}</li>
     </ul>
     <b>{{ tags }}</b
     ><br />
-    <a :href="imageUrl" target="_blank">Voir l'image</a>
+    <br />
+    <a :href="imageUrl" target="_blank">Voir plus...</a>
   </footer>
 </template>
 
