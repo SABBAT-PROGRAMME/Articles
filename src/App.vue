@@ -4,7 +4,6 @@
     <div v-if="state === 'loading'">Chargement...</div>
     <div v-if="state === 'success'">
       <div class="card">
-        <h1>{{ articlesloccal.titre }}</h1>
         <!-- Passer directement les données via props -->
         <Articles :myArticles="articlesloccal" v-if="articlesloccal" />
       </div>

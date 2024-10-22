@@ -1,46 +1,32 @@
 <!-- template -->
 <template>
-  <br />
-
-  <!-- Boucle pour afficher les articles -->
-  <div v-for="(article, index) in myArticles.articles" :key="index">
-    <article>
-      <!-- Header -->
-
-      <Header
-        :id="index + 1"
-        :title="article.title"
-        :author="article.author"
-        :datePublished="article.date_published"
-      />
-      <!-- Body -->
-      <Body :summary="article.summary" :content="article.content" />
-      <!-- Footer -->
-      <Footer
-        :category="article.category"
-        :tags="article.tags"
-        :imageUrl="article.image_url"
-      />
-    </article>
-    <button disabled>Voir l'article suivant</button>
-    <br />
-    <br />
-  </div>
-
+  <h1>{{ myArticles.titre }}</h1>
+  <Card :article="article" v-if="myArticles" @next="nextArticle" />
   <!-- Autre contenu -->
 </template>
 
 <!-- script -->
 <script setup>
-import { defineProps } from "vue";
-import Header from "./Header.vue";
-import Body from "./Body.vue";
-import Footer from "./Footer.vue";
+import { computed, defineProps, ref } from "vue";
+import Card from "./Card.vue";
 
 // Définir les props pour recevoir les données
 const props = defineProps({
   myArticles: Object,
 });
+
+const step = ref(0);
+const article = computed(() => props.myArticles.articles[step.value]);
+
+// Lire l'article suivant
+const next = ref(props.myArticles.articles.map(() => null));
+const nextArticle = () => {
+  step.value++;
+
+  if (step.value >= props.myArticles.articles.length) {
+    step.value = 0;
+  }
+};
 </script>
 
 <!-- style -->
