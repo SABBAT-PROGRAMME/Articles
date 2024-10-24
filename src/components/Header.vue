@@ -3,7 +3,7 @@
   <header>
     <h3>{{ title.toUpperCase() }}</h3>
     <p>
-      Auteur : <i>{{ author }}</i>
+      <b> Auteur</b> : <i>{{ author }}</i>
     </p>
     <a href="#">
       Date de publication : <i>{{ datePublished }}</i>

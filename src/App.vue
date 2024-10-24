@@ -8,7 +8,13 @@
         <Articles :myArticles="articlesloccal" v-if="articlesloccal" />
       </div>
     </div>
-    <div v-if="state === 'error'">Error 404 une erreur est survenue !</div>
+    <div class="card" v-if="state === 'error'">
+      <article class="error">
+        <header><h1>Oup's error</h1></header>
+        <main><h2>404</h2></main>
+        <footer><h2>Page Not Found !</h2></footer>
+      </article>
+    </div>
   </div>
 </template>
 
@@ -22,7 +28,7 @@ const articlesloccal = ref({});
 const state = ref("loading");
 
 onMounted(() => {
-  fetch("./data.json")
+  fetch("./dataa.json")
     .then((response) => {
       if (response.ok) {
         return response.json();
@@ -40,3 +46,17 @@ onMounted(() => {
     });
 });
 </script>
+
+<!-- style -->
+
+<style>
+.card {
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.error {
+  color: red;
+  text-align: center;
+}
+</style>
