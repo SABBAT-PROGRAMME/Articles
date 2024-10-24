@@ -28,7 +28,7 @@ const articlesloccal = ref({});
 const state = ref("loading");
 
 onMounted(() => {
-  fetch("./dataa.json")
+  fetch("./data.json")
     .then((response) => {
       if (response.ok) {
         return response.json();
